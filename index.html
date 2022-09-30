@@ -9,18 +9,18 @@
     <title>Welcome to Sangmin Shopping Mall</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <img src="./images/logo.jpg" >
         <h1> Sangmin Site </h1>
     </header>
     <nav>
-     <ul>
-        <li>메인메뉴1</li>
-        <li>메인메뉴2</li>
-        <li>메인메뉴3</li>
-        <li>메인메뉴4</li>
-        <li>메인메뉴5</li>
-     </ul>
+        <ul>
+            <li><a href="#"> 소개</a></li>
+            <li><a href="#"> 쇼핑몰</a></li>
+            <li><a href="#"> 패키지</a></li>
+            <li><a href="#"> 커뮤니티</a></li>
+            <li><a href="#"> 방명록</a></li>
+        </ul>
     </nav>
     <section>
      <article> 
@@ -65,9 +65,25 @@
             <iframe width="674" height="379" src="https://www.youtube.com/embed/xVU-UUKHYeQ" title="휘성 파이널 라운드 미션곡, '결혼까지 생각했어'♬ - 히든싱어2 9회 [휘성 편]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
      </article>
-     <article></article>
-     <aside> 즐겨찾기 넣기
-
+     <article>
+        <div class="gallery">
+            <iframe src="./gallery.html" width= 60% height=300 frameborder="0"></iframe>
+        </div>
+     </article>
+     <aside>
+        <div class="login">
+            <form action="#" method="post"> <!-- method = 데이터 전송방식-->
+                회원ID: <input type="text" name="id" id=""><br> <!--id = 입력한 값이 변수로 저장-->
+                비밀번호: <input type="password" name="pw" id=""><br>
+                <input type="submit" value="제출">
+                <input type="button" value="회원가입">
+            </form>
+        </div>
+        <div class="bookmark">
+            <a href= "https://mis.donga.ac.kr" target="_blank"> 경영정보학과</a><br>
+            <a href="./gallery.html"> 갤러리</a><br>
+            <a href="#home">이상민</a><br>
+        </div>
      </aside>
     </section>
     <footer>
